@@ -1,0 +1,194 @@
+
+.red {
+    color: red;
+
+}
+.green {
+    color: green;
+}
+
+.yellow {
+    color: $default_yellow;
+}
+
+.white {
+  color: #fff; 
+}
+
+.black {
+  color: #000;
+}
+
+.blue {
+  color: $default_blue; 
+}
+
+.gray {
+  color: gray; 
+}
+
+.redback {
+    background-color: red;
+}
+.greenback {
+    background-color: green;
+}
+.grayback {
+    background-color: $default_gray;
+}
+
+.blueback {
+    background-color: $default_blue;
+}
+
+.redb {
+    width:650px;
+    height:50px;
+    border-style:solid;
+    border-color:red;
+    color:red;
+    margin-bottom:5px;
+}
+
+.greenb {
+    width:650px;
+    height:50px;
+    border-style:solid;
+    border-color:green;
+    color:green;
+    margin-bottom:5px;
+}
+
+.items {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+}
+
+.redB {
+    display:inline-block;
+    width:55px;
+    height:45px;
+    background:red;
+    
+}
+
+.greenB {
+  display: inline-block;
+  width: 55px;
+  height: 45px;
+  background: green;
+  margin-top: 1.5px;
+  top: 0px;
+  position: relative;
+}
+
+.redblock {
+  color: red;
+  border-style: solid;
+  border-color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+.greenblock {
+  color: green;
+  border-style: solid;
+  border-color: green;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+.grayblock {
+  color: $default_gray;
+  border-style: solid;
+  border-color: $default_gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+.blueblock {
+  color: $default_blue;
+  border-style: solid;
+  border-color: $default_blue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+.greenborder {
+  border-style: solid;
+  border-color: green;
+}
+
+.redborder {
+  border-style: solid;
+  border-color: red;
+}
+
+.blueborder {
+  border-style: solid;
+  border-color: $default_blue;
+}
+
+
+
+dt, dd a {
+  display: block;
+  padding: 15px 0 15px 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+}
+
+dt {
+  cursor: pointer;
+  outline: none;
+}
+
+dl {
+  margin: 0;
+}
+
+dd a {
+  text-decoration: none;
+}
+dd a:hover {
+  color: #0d0d0d;
+}
+dd a:active {
+  color: black;
+}
+
+.accordion-element__term {
+  font-weight: bold;
+}
+.accordion-element__term.active, .accordion-element__term:hover, .accordion-element__term:focus {
+  background-color: #eee;
+}
+
+.accord-desc a {
+  display: block;
+  padding: 15px 0 15px 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+}
+
+#acdnmenu 
+{
+    height: 70%;
+    width: 100%;
+}
+
+.heading {
+  padding-bottom: 0px;
+}
