@@ -1,4 +1,4 @@
 angular-dash
 ============
 
-This is a sample project to demonstrate basic angularjs functionalties
+Sample project to demonstrate basic angularjs functionalties
