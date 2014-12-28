@@ -1,0 +1,1106 @@
+/* line 2, ../sass/_block.scss */
+.red {
+  color: red;
+}
+
+/* line 6, ../sass/_block.scss */
+.green {
+  color: green;
+}
+
+/* line 10, ../sass/_block.scss */
+.yellow {
+  color: #ffcc00;
+}
+
+/* line 14, ../sass/_block.scss */
+.white {
+  color: #fff;
+}
+
+/* line 18, ../sass/_block.scss */
+.black {
+  color: #000;
+}
+
+/* line 22, ../sass/_block.scss */
+.blue {
+  color: #3399ff;
+}
+
+/* line 26, ../sass/_block.scss */
+.gray {
+  color: gray;
+}
+
+/* line 30, ../sass/_block.scss */
+.redback {
+  background-color: red;
+}
+
+/* line 33, ../sass/_block.scss */
+.greenback {
+  background-color: green;
+}
+
+/* line 36, ../sass/_block.scss */
+.grayback {
+  background-color: #c4c4c4;
+}
+
+/* line 40, ../sass/_block.scss */
+.blueback {
+  background-color: #3399ff;
+}
+
+/* line 44, ../sass/_block.scss */
+.redb {
+  width: 650px;
+  height: 50px;
+  border-style: solid;
+  border-color: red;
+  color: red;
+  margin-bottom: 5px;
+}
+
+/* line 53, ../sass/_block.scss */
+.greenb {
+  width: 650px;
+  height: 50px;
+  border-style: solid;
+  border-color: green;
+  color: green;
+  margin-bottom: 5px;
+}
+
+/* line 62, ../sass/_block.scss */
+.items {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  top: -20px;
+}
+
+/* line 69, ../sass/_block.scss */
+.redB {
+  display: inline-block;
+  width: 55px;
+  height: 45px;
+  background: red;
+}
+
+/* line 77, ../sass/_block.scss */
+.greenB {
+  display: inline-block;
+  width: 55px;
+  height: 45px;
+  background: green;
+  margin-top: 1.5px;
+  top: 0px;
+  position: relative;
+}
+
+/* line 87, ../sass/_block.scss */
+.redblock {
+  color: red;
+  border-style: solid;
+  border-color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+/* line 96, ../sass/_block.scss */
+.greenblock {
+  color: green;
+  border-style: solid;
+  border-color: green;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+/* line 105, ../sass/_block.scss */
+.grayblock {
+  color: #c4c4c4;
+  border-style: solid;
+  border-color: #c4c4c4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+/* line 114, ../sass/_block.scss */
+.blueblock {
+  color: #3399ff;
+  border-style: solid;
+  border-color: #3399ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: none;
+}
+
+/* line 123, ../sass/_block.scss */
+.greenborder {
+  border-style: solid;
+  border-color: green;
+}
+
+/* line 128, ../sass/_block.scss */
+.redborder {
+  border-style: solid;
+  border-color: red;
+}
+
+/* line 133, ../sass/_block.scss */
+.blueborder {
+  border-style: solid;
+  border-color: #3399ff;
+}
+
+/* line 140, ../sass/_block.scss */
+dt, dd a {
+  display: block;
+  padding: 15px 0 15px 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+}
+
+/* line 150, ../sass/_block.scss */
+dt {
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 155, ../sass/_block.scss */
+dl {
+  margin: 0;
+}
+
+/* line 159, ../sass/_block.scss */
+dd a {
+  text-decoration: none;
+}
+
+/* line 162, ../sass/_block.scss */
+dd a:hover {
+  color: #0d0d0d;
+}
+
+/* line 165, ../sass/_block.scss */
+dd a:active {
+  color: black;
+}
+
+/* line 169, ../sass/_block.scss */
+.accordion-element__term {
+  font-weight: bold;
+}
+
+/* line 172, ../sass/_block.scss */
+.accordion-element__term.active, .accordion-element__term:hover, .accordion-element__term:focus {
+  background-color: #eee;
+}
+
+/* line 176, ../sass/_block.scss */
+.accord-desc a {
+  display: block;
+  padding: 15px 0 15px 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+}
+
+/* line 186, ../sass/_block.scss */
+#acdnmenu {
+  height: 70%;
+  width: 100%;
+}
+
+/* line 192, ../sass/_block.scss */
+.heading {
+  padding-bottom: 0px;
+}
+
+/* Accordion Menu powered by www.menucool.com */
+/* ##### Top level items #####*/
+/* line 4, ../sass/_accord.scss */
+#acdnmenu {
+  /* Note about height: 
+  Set "height:auto;" if flexible height is required. 
+  A fixed height is prefered as content below the menu won't be pulled down/up when the menu is expanding/collapsing. */
+  height: 100%;
+  width: 100%;
+}
+
+/* line 13, ../sass/_accord.scss */
+#acdnmenu ul.top {
+  padding-left: 0;
+}
+
+/* line 19, ../sass/_accord.scss */
+#acdnmenu div.heading {
+  text-align: left;
+  vertical-align: middle;
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 27, ../sass/_accord.scss */
+#acdnmenu a.link {
+  padding: 8px;
+  padding-left: 24px;
+  text-align: left;
+  font: normal 12px Verdana;
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+/*Top level link without children*/
+/* line 46, ../sass/_accord.scss */
+#acdnmenu a.current, #acdnmenu a.current:hover {
+  color: #F00;
+  text-decoration: none;
+}
+
+/* arrow image for the top headings */
+/* line 53, ../sass/_accord.scss */
+#acdnmenu div.arrowImage {
+  width: 12px;
+  height: 12px;
+  top: 9px;
+  left: 4px;
+  /* Changing it to "right:8px;" will position the arrow image to the right */
+  background-position: 0 0;
+}
+
+/* line 62, ../sass/_accord.scss */
+#acdnmenu div.current div.arrowImage {
+  background-position: 0 -12px;
+}
+
+/* line 66, ../sass/_accord.scss */
+#acdnmenu li.separator {
+  border-top: none;
+  border-bottom: none;
+}
+
+/* ##### Sub level items #####*/
+/* line 74, ../sass/_accord.scss */
+#acdnmenu ul.sub {
+  padding-left: 10px;
+  /*This determines the hierarchical offset*/
+  margin-left: 20px;
+}
+
+/* line 87, ../sass/_accord.scss */
+#acdnmenu ul.sub div.heading {
+  text-align: left;
+  font: normal 12px Arial;
+  padding: 5px;
+  padding-left: 20px;
+  color: #000;
+  background: none;
+}
+
+/* line 95, ../sass/_accord.scss */
+#acdnmenu ul.sub div.heading a {
+  color: #000;
+}
+
+/* line 100, ../sass/_accord.scss */
+#acdnmenu ul.sub div.current {
+  color: #000;
+  background: none;
+}
+
+/* line 106, ../sass/_accord.scss */
+#acdnmenu ul.sub a.link {
+  font: normal 11px Arial;
+  color: #000;
+  padding: 5px;
+  padding-left: 20px;
+  text-decoration: none;
+  background: none;
+}
+
+/* line 115, ../sass/_accord.scss */
+#acdnmenu ul.sub a.link:hover, #acdnmenu ul.sub a.current, #acdnmenu ul.sub div.heading a:hover, #acdnmenu ul.sub div.heading a.current {
+  color: #000;
+  text-decoration: underline;
+  background: none;
+}
+
+/* line 123, ../sass/_accord.scss */
+#acdnmenu ul.sub div.arrowImage {
+  width: 0px;
+  height: 0px;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 131, ../sass/_accord.scss */
+#acdnmenu ul.sub div.current div.arrowImage {
+  background-position: 0 -36px;
+}
+
+/* ##### Followings usually don't need modification ###### */
+/*Hack the font-size:0 bug for IE6 */
+/* line 139, ../sass/_accord.scss */
+#acdnmenu, #acdnmenu ul {
+  display: block;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+/* line 145, ../sass/_accord.scss */
+#acdnmenu li {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+/* line 152, ../sass/_accord.scss */
+#acdnmenu:after {
+  content: '.';
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/*Hack for IE6-7*/
+/* line 155, ../sass/_accord.scss */
+#acdnmenu ul, #acdnmenu li, #acdnmenu div.heading, #acdnmenu a.smLink, #acdnmenu div.description {
+  *zoom: 1;
+}
+
+/* line 156, ../sass/_accord.scss */
+#acdnmenu li {
+  *float: left;
+  *width: 100%;
+}
+
+/* line 158, ../sass/_accord.scss */
+#acdnmenu ul {
+  position: relative;
+  /*!*/
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+/* line 164, ../sass/_accord.scss */
+#acdnmenu > ul {
+  visibility: hidden;
+}
+
+/* line 167, ../sass/_accord.scss */
+#acdnmenu div.heading, #acdnmenu div.current {
+  cursor: pointer;
+}
+
+/* line 172, ../sass/_accord.scss */
+#acdnmenu div.arrowImage {
+  position: absolute;
+  overflow: hidden;
+}
+
+/* line 175, ../sass/_accord.scss */
+#acdnmenu .wholeblock {
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* line 181, ../sass/_accord.scss */
+#acdnmenu .looper {
+  padding: 0px;
+  border-width: 1px;
+}
+
+/* line 187, ../sass/_accord.scss */
+#acdnmenu .litems {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 192, ../sass/_accord.scss */
+#acdnmenu .headerinfo {
+  width: 12.16216%;
+  float: left;
+  margin-right: 1.35135%;
+}
+
+/* line 196, ../sass/_accord.scss */
+#acdnmenu .headerDash {
+  width: 50px;
+  height: 33px;
+  top: -9px;
+  margin-left: 3.5%;
+  position: relative;
+  -moz-box-shadow: gray 0px 4px 5px;
+  -webkit-box-shadow: gray 0px 4px 5px;
+  box-shadow: gray 0px 4px 5px;
+}
+
+/* line 206, ../sass/_accord.scss */
+#acdnmenu div.current .headerDash {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .2s .2s, opacity .2s linear;
+}
+
+/* line 212, ../sass/_accord.scss */
+#acdnmenu div.current .headerId {
+  text-decoration: underline;
+  font-size: 1.5em;
+  color: #3399ff;
+}
+
+/* line 221, ../sass/_accord.scss */
+#acdnmenu .iconDash {
+  width: 50px;
+  height: 25px;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+/* line 228, ../sass/_accord.scss */
+#acdnmenu .header-state {
+  text-align: center;
+}
+
+/* line 20, ../sass/style.scss */
+body {
+  font-family: "Arial";
+  font-size: 100%;
+  background: #eee;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../usr/local/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 32, ../sass/style.scss */
+aside ul {
+  color: red;
+}
+/* line 35, ../sass/style.scss */
+aside ul li a {
+  margin: 10px;
+  text-decoration: none;
+  border-bottom: solid 1px green;
+  display: block;
+}
+/* line 40, ../sass/style.scss */
+aside ul li a:hover {
+  color: red;
+}
+
+/* line 47, ../sass/style.scss */
+#acdnmenu .tab-heading {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+/* line 55, ../sass/style.scss */
+#acdnmenu .tab-footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  margin-top: 15%;
+  font-size: 15px;
+}
+
+/* line 67, ../sass/style.scss */
+#acdnmenu .accordList {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 72, ../sass/style.scss */
+#acdnmenu .accordTab {
+  width: 205px;
+  height: 205px;
+  display: inline-block;
+  margin: 10px;
+  margin-right: 10px;
+}
+/* line 79, ../sass/style.scss */
+#acdnmenu .accordTab .matrix {
+  list-style-type: none;
+  top: 10px;
+  position: relative;
+}
+/* line 84, ../sass/style.scss */
+#acdnmenu .accordTab .matrix .matrixElem {
+  width: 49.74874%;
+  float: left;
+}
+/* line 66, ../../../../../../usr/local/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+#acdnmenu .accordTab .matrix .matrixElem:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../usr/local/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+#acdnmenu .accordTab .matrix .matrixElem:nth-child(2n + 2) {
+  margin-left: 50.25126%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 86, ../sass/style.scss */
+#acdnmenu .accordTab .matrix .matrixElem span {
+  font-size: 65px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+/* line 91, ../sass/style.scss */
+#acdnmenu .accordTab .matrix .matrixElem .text-icon {
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+  margin-left: -6px;
+  color: #000;
+  top: -15px;
+}
+/* line 99, ../sass/style.scss */
+#acdnmenu .accordTab .matrix .matrixElem .text-over-icon {
+  font-size: 1.8em;
+  position: relative;
+  top: -40px;
+  margin-left: 35px;
+}
+/* line 107, ../sass/style.scss */
+#acdnmenu .accordTab:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+/* line 114, ../sass/style.scss */
+.text-icon-default-size {
+  font-size: 70px;
+}
+
+/* line 118, ../sass/style.scss */
+.span-first-half {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+/* line 124, ../sass/style.scss */
+.span-second-half {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+/* line 130, ../sass/style.scss */
+.empty-span {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 134, ../sass/style.scss */
+.full-span {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 138, ../sass/style.scss */
+.green-icon {
+  color: green;
+  padding: 0;
+  padding-left: 10px;
+}
+
+/* line 145, ../sass/style.scss */
+.yellow-icon {
+  color: #FFE169;
+  padding-left: 10px;
+}
+
+/* line 151, ../sass/style.scss */
+.red-icon {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 156, ../sass/style.scss */
+.green-border {
+  border: solid 2px green;
+}
+
+/* line 160, ../sass/style.scss */
+.red-border {
+  border: solid 2px red;
+}
+
+/* line 164, ../sass/style.scss */
+aside {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?sf39es");
+  src: url("fonts/icomoon.eot?#iefixsf39es") format("embedded-opentype"), url("fonts/icomoon.woff?sf39es") format("woff"), url("fonts/icomoon.ttf?sf39es") format("truetype"), url("fonts/icomoon.svg?sf39es#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 179, ../sass/style.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  zoom: 1;
+  text-shadow: #fff 0px 1px 1px;
+}
+
+/* line 195, ../sass/style.scss */
+.icon-build:before {
+  content: "\e604";
+}
+
+/* line 198, ../sass/style.scss */
+.icon-checkin:before {
+  content: "\e602";
+}
+
+/* line 201, ../sass/style.scss */
+.icon-arrow-up:before {
+  content: "\e600";
+}
+
+/* line 204, ../sass/style.scss */
+.icon-arrow-right:before {
+  content: "\e601";
+}
+
+/* line 207, ../sass/style.scss */
+.icon-arrow-down:before {
+  content: "\e603";
+}
+
+/* line 210, ../sass/style.scss */
+.icon-search:before {
+  content: "\e605";
+}
+
+/* line 213, ../sass/style.scss */
+.icon-arrow-down2:before {
+  content: "\e606";
+}
+
+/* line 218, ../sass/style.scss */
+.accord-block {
+  display: 'none';
+  overflow: 'hidden';
+}
+
+/* line 223, ../sass/style.scss */
+.pie-graph {
+  position: relative;
+  width: 90%;
+  height: 20%;
+  float: left;
+  padding-left: 10px;
+}
+
+/* line 231, ../sass/style.scss */
+.slider {
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  background: #f5b782;
+  left: -px;
+  top: -40px;
+  position: relative;
+}
+
+/* line 241, ../sass/style.scss */
+.sliderbar {
+  width: 37%;
+  height: 35px;
+  background: #aaf59d;
+  left: -5px;
+  top: -40px;
+}
+
+/* line 250, ../sass/style.scss */
+.resultPercent {
+  color: #000000;
+  font-size: 1.5em;
+  text-align: center;
+  left: 0px;
+  position: relative;
+  top: -27px;
+}
+
+/* line 259, ../sass/style.scss */
+.test-footer {
+  top: -15%;
+  position: relative;
+}
+
+/* line 264, ../sass/style.scss */
+.test-coverage {
+  top: -3px;
+  position: relative;
+  font-size: .7em;
+}
+
+/* line 270, ../sass/style.scss */
+.test-results {
+  top: -95px;
+  left: 110px;
+  position: relative;
+  font-size: 40px;
+  width: 50%;
+}
+
+/* line 278, ../sass/style.scss */
+.test-passed {
+  font-size: .34em;
+  text-align: left;
+  position: relative;
+  top: 5px;
+}
+
+/* line 285, ../sass/style.scss */
+.box-shadow {
+  -moz-box-shadow: gray 5px 5px 15px;
+  -webkit-box-shadow: gray 5px 5px 15px;
+  box-shadow: gray 5px 5px 15px;
+}
+
+/* line 289, ../sass/style.scss */
+#acdnmenu .result-section {
+  width: 205px;
+  height: 205px;
+  display: inline-block;
+  margin: 10px;
+  margin-right: 10px;
+}
+/* line 298, ../sass/style.scss */
+#acdnmenu .result-section .result-label {
+  text-align: center;
+  color: #000;
+  font-size: 1.5em;
+  top: 5%;
+  margin-left: -15px;
+  position: relative;
+}
+/* line 308, ../sass/style.scss */
+#acdnmenu .result-section .result-reason {
+  text-align: center;
+  font-size: 1.5em;
+}
+/* line 313, ../sass/style.scss */
+#acdnmenu .result-section .result-data {
+  font-size: 2.75em;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 318, ../sass/style.scss */
+#acdnmenu .result-section .result_button {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  background: #3399ff;
+  left: 15%;
+  position: relative;
+  color: #fff;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 330, ../sass/style.scss */
+#acdnmenu .result-section .button-text {
+  vertical-align: middle;
+  position: relative;
+  top: 25%;
+  font-size: 1.5em;
+}
+/* line 337, ../sass/style.scss */
+#acdnmenu .result-section .deploy-text {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  background: #fff;
+  top: 5%;
+  left: 15%;
+  position: relative;
+  color: #3399ff;
+  border-style: solid;
+  border-color: #3399ff;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+/* line 356, ../sass/style.scss */
+.heading-field {
+  width: 10.11236%;
+  float: left;
+  margin-right: 1.1236%;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* line 362, ../sass/style.scss */
+.new-line {
+  clear: both;
+}
+
+/* line 364, ../sass/style.scss */
+.build-icon {
+  color: #3399FF;
+  font-size: 90px;
+}
+
+/* line 369, ../sass/style.scss */
+.search-icon {
+  left: -10px;
+  position: relative;
+  font-size: 1em;
+}
+
+/* line 375, ../sass/style.scss */
+.bottom-arrow-icon {
+  left: 10px;
+  position: relative;
+  font-size: 1em;
+}
+
+/* line 381, ../sass/style.scss */
+.header-icon {
+  font-size: 2.5em;
+  width: 10%;
+  line-height: .5;
+  top: 6px;
+  position: relative;
+}
+
+/* line 389, ../sass/style.scss */
+.build-labels {
+  text-align: center;
+  top: -10px;
+  position: relative;
+  left: -5px;
+  font-size: 15px;
+}
+
+/* line 397, ../sass/style.scss */
+.separator {
+  margin-bottom: 0px;
+}
+
+/* line 410, ../sass/style.scss */
+.header-list {
+  top: 9px;
+  position: relative;
+}
+
+/* line 415, ../sass/style.scss */
+.heading {
+  width: 1311.75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../usr/local/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.heading:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 421, ../sass/style.scss */
+.header-1-2 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 427, ../sass/style.scss */
+.header-3-4 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 431, ../sass/style.scss */
+.header-2-3 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 436, ../sass/style.scss */
+.header-5-6 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 439, ../sass/style.scss */
+.header-7-8 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 442, ../sass/style.scss */
+.header-9-10 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 445, ../sass/style.scss */
+.header-11-12 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 449, ../sass/style.scss */
+.header-13-14 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 453, ../sass/style.scss */
+.header-15-16 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 457, ../sass/style.scss */
+.header-17-18 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 461, ../sass/style.scss */
+.header-19-20 {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 466, ../sass/style.scss */
+.header-titles {
+  width: 10%;
+  font-size: 14px;
+}
+
+/* line 471, ../sass/style.scss */
+#acdnmenu .buildspace {
+  margin-left: 11.7%;
+}
+
+/* line 475, ../sass/style.scss */
+#acdnmenu .nospace {
+  margin-left: 0%;
+}
+
+/* line 479, ../sass/style.scss */
+#acdnmenu .pendingspace {
+  margin-left: 23.4%;
+}
+
+/* line 484, ../sass/style.scss */
+#acdnmenu .titlebar {
+  font-size: 18px;
+  margin-bottom: 0px;
+  width: 1311.75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../usr/local/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#acdnmenu .titlebar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 489, ../sass/style.scss */
+#acdnmenu .titlebar .title-headings {
+  position: relative;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+/* line 499, ../sass/style.scss */
+#acdnmenu .titlebar .second-title {
+  margin-left: 95px;
+}
+/* line 503, ../sass/style.scss */
+#acdnmenu .titlebar .third-title {
+  margin-left: 110px;
+}
+/* line 507, ../sass/style.scss */
+#acdnmenu .titlebar .fourth-title {
+  margin-left: 80px;
+}
+/* line 511, ../sass/style.scss */
+#acdnmenu .titlebar .fifth-title {
+  margin-left: 106px;
+}
+/* line 515, ../sass/style.scss */
+#acdnmenu .titlebar .sixth-title {
+  margin-left: 64px;
+}
+/* line 519, ../sass/style.scss */
+#acdnmenu .titlebar .seventh-title {
+  margin-left: 57px;
+}
+/* line 522, ../sass/style.scss */
+#acdnmenu .titlebar .eigth-title {
+  margin-left: 22px;
+}
+
+/* line 528, ../sass/style.scss */
+.invisible {
+  visibility: hidden;
+}
