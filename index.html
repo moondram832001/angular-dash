@@ -1,0 +1,157 @@
+<!DOCTYPE html -->
+<html lang="en" ng-app="myapp">
+
+<head>
+    <title>Demo page</title>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+    <link rel="stylesheet" href="stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/style.css" media="screen">
+
+
+</head>
+
+<body>
+
+    <nav ng-controller="Ctrl" dynamic="html">
+
+        <div id="acdnmenu" style=" border: none; background-color: rgb(255, 255, 255);">
+
+            <ul class="top" style="position:relative;padding-top:20px;">
+                <li class="titlebar">
+                    <span class="first-title">Changelist/Build</span>
+                    <span class="second-title">Owner</span>
+                    <span class="third-title">Time Started</span>
+                    <span class="fourth-title">State</span>
+                    <span class="fifth-title">Metrics</span>
+                    <span class="sixth-title">Build</span>
+                    <span class="seventh-title">Unit Test</span>
+                    <span class="eigth-title">Functional Test</span>
+                </li>
+                <li ng-class='getBlockColor( {{ $index }} )' ng-repeat="item in databoard" style="margin:0px;position:relative;">
+
+                    <div class="header-list" ng-class="getHeadColor( {{ $index }} )">
+                        <div class="header-1-2 iconDash">
+                            <span class="icon-checkin header-icon" ng-hide="databoard[ $index ].type == 'build'"></span>
+                            <span class="icon-build header-icon" ng-show="databoard[ $index ].type == 'build'"></span>
+                        </div>
+
+                        <div class="header-3-4 header-titles nospace headerId">{{ databoard[ $index ].id }}</div>
+                        <div class="header-5-6 header-titles">{{ databoard[ $index ].owner }}</div>
+                        <div class="header-7-8 header-titles" ng-class="getSpaceCount( {{ $index }} ,'thirdTitle')">{{ databoard[ $index ].date }}</div>
+                        <div class="header-9-10 header-titles header-state" ng-class="getSpaceCount( {{ $index }} , 'fourthTitle')">{{ databoard[ $index ].state }}</div>
+                        <div class="header-11-12 headerDash" ng-class="getBgColor( {{ $index }} , 'metrics','state')"></div>
+                        <div class="header-13-14 headerDash" ng-class="getBgColor( {{ $index }} , 'build','state')"></div>
+                        <div class="header-15-16 headerDash" ng-class="getBgColor( {{ $index }} , 'unit_test','state')"></div>
+                        <div class="header-17-18 headerDash" ng-class="getBgColor( {{ $index }} , 'functional_test','state')"></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="accordTab box-shadow" ng-class="getBorderColor( {{ $index }} , 'metrics','state')">
+                                <div class="tab-heading" ng-class="getTabHeadColor( {{ $index }} ,'metrics','state')">Metrics</div>
+                                <div class="matrix">
+                                    <div class="matrixElem">
+                                        <span ng-class="{'icon-arrow-up green-icon': databoard[ $index ].metrics.data.test >= 50 , 'icon-arrow-down red-icon': databoard[ $index ].metrics.data.test < 50}"></span>
+                                        <div class="text-over-icon white">{{ databoard[ $index ].metrics.data.test }}</div>
+                                        <div class="text-icon">Test</div>
+                                    </div>
+                                    <div class="matrixElem">
+                                        <span ng-class="{'icon-arrow-up green-icon': databoard[ $index ].metrics.data.maintainablity >= 50 , 'icon-arrow-down red-icon': databoard[ $index ].metrics.data.maintainablity < 50}"></span>
+                                        <div class="text-over-icon white">{{ databoard[ $index ].metrics.data.maintainablity }}</div>
+                                        <div class="text-icon">Maintainablity</div>
+                                    </div>
+                                    <div class="matrixElem">
+                                        <span class="icon-arrow-right yellow-icon"></span>
+                                        <div class="text-over-icon black">{{ databoard[ $index ].metrics.data.security }}</div>
+                                        <div class="text-icon">Security</div>
+                                    </div>
+                                    <div class="matrixElem">
+                                        <span class="icon-arrow-right yellow-icon"></span>
+                                        <div class="text-over-icon black">{{ databoard[ $index ].metrics.data.workmanship }}</div>
+                                        <div class="text-icon">Workmanship</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordTab box-shadow" ng-class="getBorderColor( {{ $index }} , 'build','state')">
+                                <div class="tab-heading" ng-class="{red: databoard[ $index ].build.state == 'fail', green: databoard[ $index ].build.state == 'pass'}">Build</div>
+                                <div class="empty-span" style="height:1.25em"></div>
+                                <div class="span-first-half text-icon-default-size"><span class="icon-build build-icon"></span>
+                                </div>
+                                <div class="span-second-half text-icon-default-size"><span class="icon-build build-icon"></span>
+                                </div>
+                                <div class="empty-span" style="height:.75em"></div>
+                                <div class="span-first-half build-labels black">Debug</div>
+                                <div class="span-second-half build-labels black">Release</div>
+                                <div class="empty-span" style="margin-top:6%"></div>
+                                <div class="tab-footer black">{{ databoard[ $index ].build.date }}</div>
+                            </div>
+                            <div class="accordTab box-shadow" ng-class="getBorderColor( {{ $index }} , 'unit_test','state')">
+                                <div class="tab-heading" ng-class="{red: databoard[ $index ].unit_test.state == 'fail', green: databoard[ $index ].unit_test.state == 'pass'}">Unit Test</div>
+                                <div class="empty-span" style="height:.70em"></div>
+                                <div id="pie-holder{{ $index + 1 }}1" class="pie-graph" piegraph="pie-holder-{{ $index + 1 }}-1" type="unit_test">
+
+                                    <div class="test-results" ng-class="{red: databoard[ $index ].unit_test.state == 'fail', green: databoard[ $index ].unit_test.state == 'pass'}">{{ (databoard[ $index ].unit_test.tests_passed / (databoard[ $index ].unit_test.tests_failed + databoard[ $index ].unit_test.tests_passed) * 100)  | number:0 }}%
+                                        <div class="test-passed black">tests passed</div>
+                                    </div>
+                                    <div id="slider{{ $index + 1 }}1" class="slider" slider="slider-{{ $index + 1 }}-1" type="unit_test">
+                                        <div id="sliderbar{{ $index + 1 }}1" class="sliderbar"></div>
+                                        <div id="resultPercent{{ $index + 1 }}1" class="resultPercent">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordTab box-shadow" ng-class="getBorderColor( {{ $index }} ,'functional_test','state')">
+                                <div class="tab-heading" ng-class="{red: databoard[ $index ].functional_test.state == 'fail', green: databoard[ $index ].functional_test.state == 'pass'}">Functional Test</div>
+                                <div class="empty-span" style="height:.70em"></div>
+                                <div id="pie-holder{{ $index + 1 }}2" class="pie-graph" piegraph="pie-holder-{{ $index + 1 }}-2" type="func_test">
+                                    <div class="test-results" ng-class="{red: databoard[ $index ].functional_test.state == 'fail', green: databoard[ $index ].functional_test.state == 'pass'}">{{ (databoard[ $index ].functional_test.tests_passed / (databoard[ $index ].functional_test.tests_failed + databoard[ $index ].functional_test.tests_passed) * 100)  | number:0 }}%
+                                        <div class="test-passed black">tests passed</div>
+                                    </div>
+                                    <div id="slider{{ $index + 1 }}2" class="slider" slider="slider-{{ $index + 1 }}-2" type="func_test">
+                                        <div id="sliderbar{{ $index + 1 }}2" class="sliderbar"></div>
+                                        <div id="resultPercent{{ $index + 1 }}2" class="resultPercent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-section">
+                                <div class="tab-heading result-label">Result:</div>
+                                <div class="empty-span" style="height:1.75em"></div>
+                                <div class="full-span result-reason" ng-class='getResultColor( {{ $index }})'>{{ databoard[ $index ].result_reason}}</div>
+                                <div class="full-span" style="height:1em"></div>
+                                <div class="full-span result-data" ng-class='getResultColor( {{ $index }} )'>{{ databoard[ $index ].result}}</div>
+                                <div class="empty-span" style="height:1em"></div>
+                                <div class="full-span result_button">
+                                    <div class="button-text"><span class="icon-search search-icon" ng-show="databoard[ $index ].options == 'Merged Build'"></span>{{ databoard[ $index ].options}}</div>
+                                </div>
+                                <div class="full-span deploy-text" ng-show="databoard[ $index ].options == 'Deploy to'">
+                                    <div class="button-text">Production<span class="icon-arrow-down2 bottom-arrow-icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <script src="js/lib/accordionmenu.js" type="text/javascript"></script>
+    <script src="js/lib/raphael.js" type="text/javascript"></script>
+    <script src="js/lib/pie.js" type="text/javascript"></script>
+    <script src="js/lib/angular.min.js" type="text/javascript"></script>
+
+    <script src="js/app.js" type="text/javascript"></script>
+    <!--Add backend stub modules-->
+    <script src="js/lib/angular-mocks.js" type="text/javascript"></script>
+    <script src="js/backendstub.js" type="text/javascript"></script>
+
+
+
+
+</body>
+
+</html>
