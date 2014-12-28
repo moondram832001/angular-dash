@@ -8,7 +8,7 @@ app.controller('Ctrl', function($scope, $timeout, $http) {
         id: 458992,
         type: 'firewall',
         date: '6/18/2014 10:20pm',
-        owner: 'jtuck',
+        owner: 'ghardy',
         state: 'Running',
         metrics: {
             state: 'Running',
@@ -78,7 +78,7 @@ app.controller('Ctrl', function($scope, $timeout, $http) {
         id: 978993,
         type: 'firewall',
         date: '6/18/2014 11:23pm',
-        owner: 'tsmith',
+        owner: 'dkumar',
         state: 'Accepted',
         metrics: {
             state: 'pass',    
@@ -148,7 +148,7 @@ app.controller('Ctrl', function($scope, $timeout, $http) {
         id: 703657,
         type: 'firewall',
         date: '6/17/2014 09:11am',
-        owner: 'samy',
+        owner: 'rtyler',
         state: 'Rejected',
         metrics: {
             state: 'pass',    
